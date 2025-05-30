@@ -1,0 +1,141 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
+    "*.{js,jsx}",
+    "*.{js,ts,jsx,tsx,mdx}",
+  ],
+  prefix: "",
+  safelist: [
+    // Add theme color classes to safelist to ensure they're not purged
+    "from-purple-600",
+    "to-purple-400",
+    "text-purple-600",
+    "dark:text-purple-400",
+    "bg-purple-600",
+    "hover:bg-purple-700",
+    "border-purple-600",
+    "hover:bg-purple-600/10",
+    "bg-purple-100",
+    "dark:bg-purple-900/30",
+    "ring-purple-500",
+
+    "from-blue-600",
+    "to-blue-400",
+    "text-blue-600",
+    "dark:text-blue-400",
+    "bg-blue-600",
+    "hover:bg-blue-700",
+    "border-blue-600",
+    "hover:bg-blue-600/10",
+    "bg-blue-100",
+    "dark:bg-blue-900/30",
+    "ring-blue-500",
+
+    "from-green-600",
+    "to-green-400",
+    "text-green-600",
+    "dark:text-green-400",
+    "bg-green-600",
+    "hover:bg-green-700",
+    "border-green-600",
+    "hover:bg-green-600/10",
+    "bg-green-100",
+    "dark:bg-green-900/30",
+    "ring-green-500",
+
+    "from-orange-600",
+    "to-orange-400",
+    "text-orange-600",
+    "dark:text-orange-400",
+    "bg-orange-600",
+    "hover:bg-orange-700",
+    "border-orange-600",
+    "hover:bg-orange-600/10",
+    "bg-orange-100",
+    "dark:bg-orange-900/30",
+    "ring-orange-500",
+
+    "from-pink-600",
+    "to-pink-400",
+    "text-pink-600",
+    "dark:text-pink-400",
+    "bg-pink-600",
+    "hover:bg-pink-700",
+    "border-pink-600",
+    "hover:bg-pink-600/10",
+    "bg-pink-100",
+    "dark:bg-pink-900/30",
+    "ring-pink-500",
+  ],
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+}
