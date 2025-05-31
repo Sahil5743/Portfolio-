@@ -357,8 +357,7 @@ export default function Portfolio() {
         </section>
 
         {/* Education Section */}
-       
-        {/* Education Section */}
+        {/* === Education section start === */}
         <section id="education" className="py-20">
           <motion.div
             initial={{ opacity: 0 }}
@@ -392,13 +391,13 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-end md:w-1/2 md:pr-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2018 - 2022</div>
-                      <h3 className="text-xl font-bold mb-2">Bachelor of Technology in Computer Science</h3>
-                      <p className="text-gray-400 mb-2">University of Technology</p>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2024 - 2028</div>
+                      <h3 className="text-xl font-bold mb-2">Bachelor of Technology in Computer Science & AiMl</h3>
+                      <p className="text-gray-400 mb-2">Dronacharya College of Engineering </p>
                       <div
                         className={`inline-block px-3 py-1 rounded-full text-sm bg-${themeColor}-900/30 text-${themeColor}-400 font-medium`}
                       >
-                        CGPA: 8.7/10
+                        CGPA: NA
                       </div>
                     </div>
                   </div>
@@ -431,9 +430,9 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-start md:w-1/2 md:pl-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2016 - 2018</div>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2023 - 2024</div>
                       <h3 className="text-xl font-bold mb-2">Higher Secondary Education (12th)</h3>
-                      <p className="text-gray-400 mb-2">City Public School</p>
+                      <p className="text-gray-400 mb-2">Adarsh Jain Public School</p>
                     </div>
                   </div>
                   <div
@@ -445,10 +444,8 @@ export default function Portfolio() {
                     <div className="pt-2">
                       <h4 className="font-semibold mb-2">Subjects</h4>
                       <p className="text-gray-400">Physics, Chemistry, Mathematics (PCM)</p>
-                      <p className="text-gray-400 mt-2">Computer Science, English</p>
-                      <p className="mt-3 text-gray-400">
-                        Participated in National Science Olympiad and secured state rank 15
-                      </p>
+                      <p className="text-gray-400 mt-2">Physical Education, English</p>
+                     
                     </div>
                   </div>
                 </motion.div>
@@ -463,9 +460,9 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-end md:w-1/2 md:pr-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2015 - 2016</div>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2021 - 2022</div>
                       <h3 className="text-xl font-bold mb-2">Secondary Education (10th)</h3>
-                      <p className="text-gray-400 mb-2">City Public School</p>
+                      <p className="text-gray-400 mb-2">Kendriya Vidyalaya School</p>
                     </div>
                   </div>
                   <div
@@ -478,7 +475,7 @@ export default function Portfolio() {
                       <h4 className="font-semibold mb-2">Subjects</h4>
                       <p className="text-gray-400">Mathematics, Science, Social Studies</p>
                       <p className="text-gray-400 mt-2">English, Hindi, Computer Science</p>
-                      <p className="mt-3 text-gray-400">School topper and recipient of the Academic Excellence Award</p>
+              
                     </div>
                   </div>
                 </motion.div>
@@ -486,7 +483,7 @@ export default function Portfolio() {
             </div>
           </motion.div>
         </section>
-
+        {/* === Education section end === */}
 
         {/* Skills Section */}
         <section id="skills" className="py-20">
