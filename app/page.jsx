@@ -404,10 +404,26 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div
-                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center`}
+                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center z-10`}
                   >
                     <div className={`w-2 h-2 rounded-full bg-${themeColor}-200`}></div>
                   </div>
+                  {/* Animated connecting line for this step */}
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "calc(100% + 2rem)", opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className={`hidden md:block absolute left-1/2 top-8`}
+                    style={{
+                      transform: "translateX(-50%)",
+                      width: "8px",
+                      background: `linear-gradient(to bottom, ${getTailwindColor(themeColor, 600)}, ${getTailwindColor(themeColor, 400)})`,
+                      opacity: 0.6,
+                      borderRadius: "4px",
+                      height: "calc(100% + 2rem)",
+                      zIndex: 0,
+                    }}
+                  />
                   <div className="md:w-1/2 md:pl-8 pl-12">
                     <div className="pt-2">
                       <h4 className="font-semibold mb-2">Key Courses</h4>
@@ -438,10 +454,26 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div
-                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center`}
+                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center z-10`}
                   >
                     <div className={`w-2 h-2 rounded-full bg-${themeColor}-200`}></div>
                   </div>
+                  {/* Animated connecting line for this step */}
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "calc(100% + 2rem)", opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className={`hidden md:block absolute left-1/2 top-8`}
+                    style={{
+                      transform: "translateX(-50%)",
+                      width: "8px",
+                      background: `linear-gradient(to bottom, ${getTailwindColor(themeColor, 600)}, ${getTailwindColor(themeColor, 400)})`,
+                      opacity: 0.6,
+                      borderRadius: "4px",
+                      height: "calc(100% + 2rem)",
+                      zIndex: 0,
+                    }}
+                  />
                   <div className="md:w-1/2 md:pr-8 md:text-right pl-12 md:pl-0">
                     <div className="pt-2">
                       <h4 className="font-semibold mb-2">Subjects</h4>
@@ -468,10 +500,26 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div
-                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center`}
+                    className={`absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-${themeColor}-600 border-4 border-gray-900 flex items-center justify-center z-10`}
                   >
                     <div className={`w-2 h-2 rounded-full bg-${themeColor}-200`}></div>
                   </div>
+                  {/* Animated connecting line for the last step */}
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "6rem", opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className={`hidden md:block absolute left-1/2 top-8`}
+                    style={{
+                      transform: "translateX(-50%)",
+                      width: "8px",
+                      background: `linear-gradient(to bottom, ${getTailwindColor(themeColor, 600)}, ${getTailwindColor(themeColor, 400)})`,
+                      opacity: 0.6,
+                      borderRadius: "4px",
+                      height: "2rem",
+                      zIndex: 0,
+                    }}
+                  />
                   <div className="md:w-1/2 md:pl-8 pl-12">
                     <div className="pt-2">
                       <h4 className="font-semibold mb-2">Subjects</h4>
@@ -1036,4 +1084,17 @@ export default function Portfolio() {
       </footer>
     </div>
   )
+}
+
+// Helper function to get Tailwind color hex for inline style fallback
+function getTailwindColor(color, shade) {
+  // Only the main theme colors used in your safelist
+  const colors = {
+    orange: { 600: "#ea580c", 400: "#fb923c" },
+    purple: { 600: "#9333ea", 400: "#a78bfa" },
+    blue: { 600: "#2563eb", 400: "#60a5fa" },
+    green: { 600: "#16a34a", 400: "#4ade80" },
+    pink: { 600: "#db2777", 400: "#f472b6" },
+  };
+  return (colors[color] && colors[color][shade]) || "#ea580c";
 }
