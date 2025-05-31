@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import HeroStarBackground from "@/components/hero-star-background"
+import { Linkedin } from "lucide-react"
 
 export default function Portfolio() {
   // Set default theme color to orange to match the screenshot
@@ -356,6 +357,8 @@ export default function Portfolio() {
         </section>
 
         {/* Education Section */}
+       
+        {/* Education Section */}
         <section id="education" className="py-20">
           <motion.div
             initial={{ opacity: 0 }}
@@ -389,13 +392,13 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-end md:w-1/2 md:pr-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2024 - 2028</div>
-                      <h3 className="text-xl font-bold mb-2">Bachelor of Technology in Computer Science & AiMl</h3>
-                      <p className="text-gray-400 mb-2">Dronacharya College of Engineering </p>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2018 - 2022</div>
+                      <h3 className="text-xl font-bold mb-2">Bachelor of Technology in Computer Science</h3>
+                      <p className="text-gray-400 mb-2">University of Technology</p>
                       <div
                         className={`inline-block px-3 py-1 rounded-full text-sm bg-${themeColor}-900/30 text-${themeColor}-400 font-medium`}
                       >
-                        CGPA: NA
+                        CGPA: 8.7/10
                       </div>
                     </div>
                   </div>
@@ -428,9 +431,9 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-start md:w-1/2 md:pl-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2023 - 2024</div>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2016 - 2018</div>
                       <h3 className="text-xl font-bold mb-2">Higher Secondary Education (12th)</h3>
-                      <p className="text-gray-400 mb-2">Adarsh Jain Public School</p>
+                      <p className="text-gray-400 mb-2">City Public School</p>
                     </div>
                   </div>
                   <div
@@ -442,8 +445,10 @@ export default function Portfolio() {
                     <div className="pt-2">
                       <h4 className="font-semibold mb-2">Subjects</h4>
                       <p className="text-gray-400">Physics, Chemistry, Mathematics (PCM)</p>
-                      <p className="text-gray-400 mt-2">Physical Education, English</p>
-                     
+                      <p className="text-gray-400 mt-2">Computer Science, English</p>
+                      <p className="mt-3 text-gray-400">
+                        Participated in National Science Olympiad and secured state rank 15
+                      </p>
                     </div>
                   </div>
                 </motion.div>
@@ -458,9 +463,9 @@ export default function Portfolio() {
                 >
                   <div className="flex items-center justify-center md:justify-end md:w-1/2 md:pr-8 pb-8 md:pb-0">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2021 - 2022</div>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2015 - 2016</div>
                       <h3 className="text-xl font-bold mb-2">Secondary Education (10th)</h3>
-                      <p className="text-gray-400 mb-2">Kendriya Vidyalaya School</p>
+                      <p className="text-gray-400 mb-2">City Public School</p>
                     </div>
                   </div>
                   <div
@@ -473,7 +478,7 @@ export default function Portfolio() {
                       <h4 className="font-semibold mb-2">Subjects</h4>
                       <p className="text-gray-400">Mathematics, Science, Social Studies</p>
                       <p className="text-gray-400 mt-2">English, Hindi, Computer Science</p>
-              
+                      <p className="mt-3 text-gray-400">School topper and recipient of the Academic Excellence Award</p>
                     </div>
                   </div>
                 </motion.div>
@@ -481,6 +486,7 @@ export default function Portfolio() {
             </div>
           </motion.div>
         </section>
+
 
         {/* Skills Section */}
         <section id="skills" className="py-20">
@@ -586,6 +592,7 @@ export default function Portfolio() {
                   </div>
                 </motion.div>
               ))}
+
             </div>
           </motion.div>
         </section>
@@ -624,40 +631,23 @@ export default function Portfolio() {
                   title: "Minnitwitter Clone",
                   description: "A real-time Twitter clone with user authentication and live updates.",
                   image: "/placeholder.svg?height=300&width=500",
-              
                   tags: ["React", "Node.js", "MongoDB"],
+                  github: "https://github.com/Sahil5743/react-twitter-clone",
                 },
                 {
                   title: "Note-taking Application",
                   description: "A collaborative note-taking app with rich text editing and sharing features.",
                   image: "/placeholder.svg?height=300&width=500",
-                 
                   tags: ["React", "Tailwind CSS"],
+                  github: "https://github.com/Sahil5743/Notes",
                 },
-                // {
-                //   title: "Task Management App",
-                //   description: "Collaborative task management application with real-time updates.",
-                //   image: "/placeholder.svg?height=300&width=500",
-                //   tags: ["React", "Firebase", "Tailwind CSS"],
-                // },
                 {
                   title: "Portfolio Website",
                   description: "Responsive portfolio website with dark mode and animations.",
                   image: "/placeholder.svg?height=300&width=500",
                   tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
+                  github: "https://github.com/Sahil5743/Portfolio-",
                 },
-                // {
-                //   title: "Weather Application",
-                //   description: "Real-time weather forecasting app with location detection.",
-                //   image: "/placeholder.svg?height=300&width=500",
-                //   tags: ["React", "OpenWeather API", "Geolocation"],
-                // },
-                // {
-                //   title: "Recipe Finder",
-                //   description: "Search and save recipes with filtering by ingredients and dietary restrictions.",
-                //   image: "/placeholder.svg?height=300&width=500",
-                //   tags: ["React", "Node.js", "MongoDB"],
-                // },
               ].map((project, index) => (
                 <motion.div
                   key={project.title}
@@ -705,13 +695,33 @@ export default function Portfolio() {
                         className="flex gap-2"
                       >
                         <a
-                          href="#"
+                          href={
+                            project.title === "Minnitwitter Clone"
+                              ? project.github
+                              : project.title === "Note-taking Application"
+                              ? project.github
+                              : project.title === "Portfolio Website"
+                              ? project.github
+                              : "#"
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors"
                         >
                           <Github className="h-5 w-5 text-white" />
                         </a>
                         <a
-                          href="#"
+                          href={
+                            project.title === "Minnitwitter Clone"
+                              ? "https://react-twitter-clone-nu.vercel.app/"
+                              : project.title === "Note-taking Application"
+                              ? "https://notes-eta-mauve.vercel.app/"
+                              : project.title === "Portfolio Website"
+                              ? "https://portfolio-cohm.vercel.app/"
+                              : "#"
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/40 transition-colors"
                         >
                           <ExternalLink className="h-5 w-5 text-white" />
@@ -748,6 +758,11 @@ export default function Portfolio() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className={`text-sm font-medium text-${themeColor}-400 hover:text-${themeColor}-300 flex items-center gap-1 group`}
+                      onClick={() => {
+                        if (project.github) {
+                          window.open(project.github, "_blank", "noopener,noreferrer");
+                        }
+                      }}
                     >
                       View Details
                       <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
@@ -755,6 +770,7 @@ export default function Portfolio() {
                   </div>
                 </motion.div>
               ))}
+
             </div>
 
             <motion.div
@@ -768,6 +784,7 @@ export default function Portfolio() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`px-8 py-3 bg-gradient-to-r from-${themeColor}-600 to-${themeColor}-400 text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl`}
+                onClick={() => window.open("https://github.com/Sahil5743", "_blank", "noopener,noreferrer")}
               >
                 View All Projects
               </motion.button>
@@ -850,6 +867,23 @@ export default function Portfolio() {
                         </div>
                       </div>
 
+                      <div className="flex items-center gap-4">
+                        <div className={`p-3 bg-${themeColor}-900/30 rounded-lg text-${themeColor}-400`}>
+                          <Linkedin className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">LinkedIn</h4>
+                          <a
+                            href="https://www.linkedin.com/in/sahil-a370b0324/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white transition-colors"
+                          >
+                            linkedin.com/in/sahil
+                          </a>
+                        </div>
+                      </div>
+
                       <div className="pt-8">
                         <h4 className="font-semibold mb-4">Connect with me</h4>
                         <div className="flex space-x-4">
@@ -868,10 +902,12 @@ export default function Portfolio() {
                             <Mail className="h-5 w-5" />
                           </a>
                           <a
-                            href="#"
+                            href="https://www.linkedin.com/in/sahil-a370b0324/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={`p-3 bg-${themeColor}-900/30 rounded-lg text-${themeColor}-400 hover:bg-${themeColor}-800/50 transition-colors`}
                           >
-                            <ExternalLink className="h-5 w-5" />
+                            <Linkedin className="h-5 w-5" />
                           </a>
                         </div>
                       </div>
