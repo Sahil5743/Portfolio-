@@ -889,7 +889,7 @@ export default function Portfolio() {
                     <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
                     <form
                       className="space-y-6"
-                      action="https://formspree.io/f/xzzgpdnp"
+                      action={process.env.NEXT_PUBLIC_FORMSPREE_KEY}
                       method="POST"
                     >
                       <div className="grid sm:grid-cols-2 gap-6">
