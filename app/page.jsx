@@ -390,8 +390,10 @@ export default function Portfolio() {
                   className="relative flex flex-col md:flex-row items-start mb-16"
                 >
                   <div className="flex items-center justify-center md:justify-end md:w-1/2 md:pr-8 pb-8 md:pb-0">
-                    <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md">
-                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>2024 - 2028</div>
+                    <div className={`bg-gray-800 p-6 rounded-lg shadow-lg w-full md:max-w-md`}>
+                      <div className={`text-${themeColor}-400 text-sm font-semibold mb-2`}>
+                        2024 - 2028
+                      </div>
                       <h3 className="text-xl font-bold mb-2">Bachelor of Technology in Computer Science & AiMl</h3>
                       <p className="text-gray-400 mb-2">Dronacharya College of Engineering </p>
                       <div
@@ -729,7 +731,7 @@ export default function Portfolio() {
 
                   <div className="p-6">
                     <h3
-                      className={`font-bold text-xl mb-2 group-hover:text-${themeColor}-400 transition-colors duration-300`}
+                      className={`font-bold text-xl mb-2 transition-colors duration-300 group-hover:text-${themeColor}-400`}
                     >
                       {project.title}
                     </h3>

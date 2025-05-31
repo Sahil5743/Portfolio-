@@ -71,6 +71,29 @@ module.exports = {
     "bg-pink-100",
     "dark:bg-pink-900/30",
     "ring-pink-500",
+
+    // Add all possible combinations for education section
+    "text-purple-400",
+    "bg-purple-900/30",
+    "bg-purple-600",
+    "bg-purple-200",
+    "text-blue-400",
+    "bg-blue-900/30",
+    "bg-blue-600",
+    "bg-blue-200",
+    "text-green-400",
+    "bg-green-900/30",
+    "bg-green-600",
+    "bg-green-200",
+    "text-orange-400",
+    "bg-orange-900/30",
+    "bg-orange-600",
+    "bg-orange-200",
+    "text-pink-400",
+    "bg-pink-900/30",
+    "bg-pink-600",
+    "bg-pink-200",
+    // Add more if you add more theme colors
   ],
   theme: {
     container: {
