@@ -552,7 +552,7 @@ export default function Portfolio() {
               </span>
             </h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               {[
                 { name: "React", icon: <Code className="h-6 w-6" />, level: 90, color: "from-blue-500 to-cyan-400" },
                 {
@@ -591,6 +591,12 @@ export default function Portfolio() {
                   icon: <Code className="h-6 w-6" />,
                   level: 75,
                   color: "from-green-600 to-green-800",
+                },
+                {
+                  name: "Docker",
+                  icon: <Code className="h-6 w-6" />,
+                  level: 80,
+                  color: "from-sky-500 to-blue-400",
                 },
               ].map((skill, index) => (
                 <motion.div
@@ -639,7 +645,6 @@ export default function Portfolio() {
                   </div>
                 </motion.div>
               ))}
-
             </div>
           </motion.div>
         </section>
@@ -672,7 +677,7 @@ export default function Portfolio() {
               technologies.
             </motion.p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
                   title: "Minnitwitter Clone",
@@ -694,6 +699,13 @@ export default function Portfolio() {
                   image: "/placeholder.svg?height=300&width=500",
                   tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
                   github: "https://github.com/Sahil5743/Portfolio-",
+                },
+                {
+                  title: "CCTV Attendance Management System",
+                  description: "A full-stack, AI-powered attendance management platform featuring face recognition, CCTV integration, automated salary processing, and real-time email reporting.",
+                  image: "/placeholder.svg?height=300&width=500",
+                  tags: ["React", "Node.js", "MongoDB", "AI","Next.js","Tailwind CSS","Docker"],
+                  github: "https://github.com/Sahil5743/CCTV-Based-Attendance-Marker",
                 },
               ].map((project, index) => (
                 <motion.div
@@ -748,6 +760,8 @@ export default function Portfolio() {
                               : project.title === "Note-taking Application"
                               ? project.github
                               : project.title === "Portfolio Website"
+                              ? project.github
+                              : project.title === "CCTV Attendance Management System"
                               ? project.github
                               : "#"
                           }
